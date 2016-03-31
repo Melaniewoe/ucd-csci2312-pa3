@@ -1217,6 +1217,7 @@ void test_cluster_smoketest(ErrorContext &ec) {
     }
     ec.result(pass);
 
+    
 
     ec.DESC("copy constructor");
     pass = true;
@@ -2854,6 +2855,7 @@ void test_cluster_IO(ErrorContext &ec, unsigned int numRuns) {
 
             ec.result(pass);
         }
+ 
         ec.DESC("read from a file: 2 caught exceptions");
 
         {
