@@ -2887,11 +2887,11 @@ void test_cluster_IO(ErrorContext &ec, unsigned int numRuns) {
 // Smoketest: constructor, destructor, loading points
 void test_kmeans_smoketest(ErrorContext &ec) {
     bool pass;
-
+/*
     ec.DESC("--- Test - KMeans - Smoketest ---");
 
     ec.DESC("constructor, destructor");
-
+*/
     pass = true;
     for (int i = 0; i < 10; i ++) {
 

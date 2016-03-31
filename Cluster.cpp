@@ -478,7 +478,11 @@ namespace Clustering
             
             
         }
+         
+       
         return out;
+         
+        
         
     }
     
@@ -695,28 +699,21 @@ namespace Clustering
         return newCluster;
     }
 
-    //NEED TO DOOOOOOOOOOOO
     // Move Inner class
     Cluster::Move::Move(const Point &p, Cluster &from, Cluster &to)
-    : __p(p), __from(from), __to(to) {
-        //perform();
+    : __p(p), __from(from), __to(to)
+    {
+        
     }
     
-    void Cluster::Move::perform() {
-        if (__from.contains(__p)) {
+    void Cluster::Move::perform()
+    {
+        
+        if (__from.contains(__p))
+        {
             __to.add(__from.remove(__p));
-            
-            __to.centroid.setValid(false);
-            __from.centroid.setValid(false);
         }
         
-        if (__to.__size == 0) {
-            __to.centroid.toInfinity();
-        }
-        
-        if (__from.__size == 0) {
-            __from.centroid.toInfinity();
-        }
     }
 
 }
